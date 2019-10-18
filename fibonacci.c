@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  int i,N,primo,secondo,terzo;
+  int i,n,primo,secondo,terzo;
 
   printf("Quanti numeri della successione vuoi visualizzare? ");
-  scanf("%d", &N);
+  scanf("%d", &n);
 
   primo=1;
   secondo=1;
@@ -12,7 +12,7 @@ int main() {
   printf("%d\n",primo);
   printf("%d\n",secondo);
 
-  for(i=2;i<N;i++) {
+  for(i=2;i<n;i++) {
       terzo=primo+secondo;
       primo=secondo;
       secondo=terzo;
